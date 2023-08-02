@@ -217,7 +217,7 @@ case $1 in
 		fi
 
 		# shellcheck source=package/tailscale-env
-		source "${PACKAGE_ROOT}/tailscale-env"
+		source "${TAILSCALE_ROOT}/tailscale-env"
 
 		if [ "${TAILSCALE_AUTOUPDATE}" = "true" ]; then
 			tailscale_has_update && tailscale_update || echo "Not updated"
